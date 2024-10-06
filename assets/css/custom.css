@@ -4,12 +4,22 @@
     --main-width: 1024px;
 }
 
+.header {
+    background-image: url("/logo-wide-150px.png") ;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 150px;
+    padding-left: 250px;
+}
+
 .intro {
     vertical-align: middle;
     margin: 10px;
 }
 
 .img-logo img {
-    float: left;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
+
