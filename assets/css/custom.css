@@ -1,25 +1,25 @@
 /* Place custom css here */
 
-:root {
+/* :root {
     --main-width: 1024px;
-}
+} */
 
 .header {
     background-image: url("/logo-wide-150px.png") ;
     background-repeat: no-repeat;
-    background-position: left top;
-    height: 150px;
-    padding-left: 250px;
+    background-position: center top;
+    padding-top: 150px;
+    margin-top: 10px;
+}
+.flex {
+    border-top: 4px solid #56839F;
+    border-bottom: 2px solid #56839F;
 }
 
-.intro {
-    vertical-align: middle;
-    margin: 10px;
-}
-
-.img-logo img {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+.img-wrapright img {
+    float: right;
+    margin-left: 10px;
+    /* margin-right: auto; */
+    /* height: auto; */
 }
 
