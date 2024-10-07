@@ -11,9 +11,10 @@
     padding-top: 150px;
     margin-top: 10px;
 }
+
 .flex {
-    border-top: 4px solid #56839F;
-    border-bottom: 2px solid #56839F;
+    border-top: 3px solid #56839F;
+    border-bottom: 1px solid #56839F;
 }
 
 .img-wrapright img {
@@ -21,5 +22,11 @@
     margin-left: 10px;
     /* margin-right: auto; */
     /* height: auto; */
+}
+
+.title-tags {
+    font-size: 60%;
+    font-weight: bold;
+    color: #FF4000;
 }
 

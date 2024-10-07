@@ -12,6 +12,24 @@
             <a href="{{ .RelPermalink }}">
                 {{ .Title }}
             </a>
+            &nbsp;
+            {{ if .Param "showTags" }}
+                {{ $taxonomy := "tags" }}
+                {{ with .Param $taxonomy }}
+                    <span class="title-tags">
+                    {{ range $index, $tag := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                    <span>
+                    <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+                    </span>
+                    {{ end }}
+                    {{ end }}
+                    </span>
+
+                {{ end }}
+            {{ end }}
+
+
         </p>
 
         {{ if .Site.Params.listSummaries }}
