@@ -1,9 +1,5 @@
 /* Place custom css here */
 
-/* :root {
-    --main-width: 1024px;
-} */
-
 .header {
     background-image: url("/logo-wide-150px.png") ;
     background-repeat: no-repeat;
@@ -13,20 +9,18 @@
 }
 
 .flex {
-    border-top: 3px solid #56839F;
-    border-bottom: 1px solid #56839F;
+    border-top: 3px solid var(--content-secondary);
+    border-bottom: 1px solid var(--content-secondary);
 }
 
 .img-wrapright img {
     float: right;
     margin-left: 10px;
-    /* margin-right: auto; */
-    /* height: auto; */
 }
 
 .title-tags {
     font-size: 60%;
     font-weight: bold;
-    color: #FF4000;
+    color: var(--content-alert);
 }
 

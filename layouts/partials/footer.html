@@ -7,9 +7,11 @@
         <a href="https://github.com/tomfran/typo">tomfran/typo</a>
     </p>
     {{ end }}
-    
+
     {{ with .Site.Params.footerContent }}
-    <p>{{ . | markdownify }}</p>
+    <p>{{ . | markdownify }}
+        <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'NbFKcm', true)">Subscribe!</a>
+    </p>
     {{ end }}
 {{ end }}
 
