@@ -30,27 +30,30 @@
       &nbsp; · &nbsp;
       {{ .ReadingTime }} min read
       {{end }}
+      {{ if .Param "showTags" }}
+      &nbsp; · &nbsp;
+
+      {{ $taxonomy := "tags" }}
+      {{ with .Param $taxonomy }}
+
+      <span class="single-tags">
+        {{ range $index, $tag := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+        <span>
+          <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+        </span>
+        {{ end }}
+        {{ end }}
+      </span>
+
+      {{ end }}
+      {{ end }}
+
+
+
     </p>
 
   </div>
-
-  {{ if .Param "showTags" }}
-
-  {{ $taxonomy := "tags" }}
-  {{ with .Param $taxonomy }}
-
-  <div class="single-tags">
-    {{ range $index, $tag := . }}
-    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-    <span>
-      <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-    </span>
-    {{ end }}
-    {{ end }}
-  </div>
-
-  {{ end }}
-  {{ end }}
 
   {{/* Table of Content */}}
 

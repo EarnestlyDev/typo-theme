@@ -24,3 +24,6 @@
     color: var(--content-alert);
 }
 
+.single-readtime {
+    font-size: 80%;
+}
