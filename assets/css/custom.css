@@ -8,9 +8,22 @@
     margin-top: 10px;
 }
 
-.flex {
+.header .flex {
     border-top: 3px solid var(--content-secondary);
     border-bottom: 1px solid var(--content-secondary);
+}
+
+footer a {
+  font-family: unset;
+}
+
+.back-to-top {
+  font-family: unset;
+}
+
+.img-wrapleft img {
+    float: left;
+    margin-right: 10px;
 }
 
 .img-wrapright img {
